@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <style>
+ /* General Reset */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+/* Profile Card Styling */
+.profile-card {
+  width: 300px;
+  margin: 20px auto;
+  padding: 20px;
+  border: 2px solid #ccc;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  box-sizing: border-box; /* Include padding and border in width/height */
+  
+}
+
+/* Floated Image */
+.profile-img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  float: left; /* Float the image */
+  margin-right: 15px; /* Space between image and text */
+  border: 2px solid #007bff;
+  box-sizing: border-box;
+}
+
+
+.name {
+  font-size: 1.5em;
+  margin: 0;
+  position: relative;
+}
+
+/* Pseudo-element for decorative icon */
+.name::before {
+  content: "👤"; /* Icon before the name */
+  color: #007bff;
+  font-size: 1.2em;
+  margin-right: 10px;
+}
+
+.bio {
+  margin: 10px 0 0;
+  color: #555;
+  line-height: 1.5;
+}
+
+ 
+ </style>
+ 
+</head>
+<body>
+  <div class="profile-card">
+    <img src="profile-pic.jpg" alt="Profile Picture" class="profile-img">
+    <div class="profile-info">
+      <h2 class="name">John Doe</h2>
+      <p class="bio">A web developer passionate about clean code and creative designs.</p>
+    </div>
+  </div>
+</body>
+</html>
